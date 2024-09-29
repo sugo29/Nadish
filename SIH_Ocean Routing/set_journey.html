@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="set_journey.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body style="background-image: url('C:\Users\suhan\OneDrive\Documents\GitHub\sih2024\SIH_Ocean Routing\src\Nadish_logo.png'); background-size: cover;">
+<body style="background-image: url(src\Nadish_logo.png); background-size: cover;">
     <header>
     
             <span>
@@ -90,11 +90,11 @@
                 </div>
                 <div class="about">
                     <h5>Journey</h5>
-                    <p>Narobi - Mumbai</p>
+                    <p>:</p>
                     <h5>Date of start</h5>
                     <p>29-Feb-2024</p>
                     <h5>Date of end</h5>
-                    <p>30-Feb-2024</p>
+                    <p>:</p>
                     <h5>Current Location</h5>
                     <p>cape of good</p>
                     <h5>Cordinates</h5>
@@ -124,12 +124,30 @@
                 </div>
             </div>
 
-            <div class="submit-section" style="text-align: center; margin-top: 20px;">
+            <div class="submit-section" id="submit-section"style="text-align: center; margin-top: 20px;">
                 <button type="submit" onclick="submitJourney()">Submit</button>
+            
+            <div class="subjects">
+                <div class="destination id" id="destination id">
+                    <h3>your Destination ID : AJ12Q3</h3><br>
+                    <h3>share it with your troupe</h3>
+                </div>
+            </div>
+            
+        
         </main>
+        
     </div>
 
     <script>
+        document.getElementById("submit-section").addEventListener("click", function() {
+            const secondElement = document.getElementById("destination id");
+            if (secondElement.style.display === "none") {
+                secondElement.style.display = "block"; // Show the element
+            } else {
+                secondElement.style.display = "none"; // Hide the element
+            }
+        });
         function submitJourney() {
             const startingPoint = document.getElementById('startingPoint').value;
             const destination = document.getElementById('destination').value;
