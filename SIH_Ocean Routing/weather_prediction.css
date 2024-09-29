@@ -1,0 +1,102 @@
+@font-face {
+    font-family: Gonserrat;
+    src: url(assets/fonts/Gontserrat_Regular.ttf);
+    src: url(assets/fonts/Gontserrat_SemiBold.ttf);
+}
+
+.navbar{
+    position:absolute;
+    
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Gonserrat";
+    font-size: 100%;
+    min-height: 100vh;
+}
+
+.bg-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    color: white;
+    padding: 2em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+    backdrop-filter: blur(100px);
+    background-color: black;
+    opacity: 0.8;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background: white;
+    padding: 10px;
+}
+
+button:hover {
+    background: #7c7c7c6b;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0.8em 1em;
+    background: white;
+    color: black;
+    font-size: 100%;
+    width: 100%;
+}
+
+h1.temp {
+    margin: 0;
+}
+
+.icdes {
+    display: flex;
+    align-items: center;
+    margin-left: 0em;
+}
+
+.description {
+    text-transform: capitalize;
+    margin-left: 0px;
+}
+
+.icon {
+    margin-left: 0em;
+    padding: 0em;
+}
+
+.magni {
+    height: 20px;
+    width: 20px;
+}

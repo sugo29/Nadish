@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Linkage and setup -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- titles and styling -->
+    <title>Weather Prediction</title>
+    <link rel="icon" href="./stock/favicon.png" type="img/png" />
+  </head>
+  <body class="body">
+    <div class="container">
+      <!-- Container DIV -->
+      <div class="group">
+        <div
+          class="currsection"
+          style="
+            background-image: url('stock/evng.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          "
+        >
+          <!--place at current weather details placed starts-->
+          <div class="basicinfo">
+            <h2 class="day">Saturday</h2>
+            <!--Current Date-->
+            <span class="date">31-Dec-2000</span>
+            <div class="icons">
+              <h2 class="tempnow">34°C</h2>
+              <h3 class="scenenow">Overcast clouds</h3>
+            </div>
+          </div>
+          <!--place at current weather details placed ended here -->
+        </div>
+        <!--place at predicted and other info of weather details placed starts-->
+
+        <div class="predsection">
+          <form>
+            <!--Location input section-->
+            <input
+              type="text"
+              placeholder="Enter the location"
+              class="citylocation"
+            />
+            <button type="submit" class="searchbutton">Search</button>
+          </form>
+
+          <div class="currdayinfo">
+            <div class="daycontent">
+              <p class="title">Name</p>
+              <span class="value">United Kingdom</span>
+            </div>
+            <div class="daycontent">
+              <p class="title">Temp</p>
+              <span class="value">54°C</span>
+            </div>
+            <div class="daycontent">
+              <p class="title">Humidity</p>
+              <span class="value">99%</span>
+            </div>
+            <div class="daycontent">
+              <p class="title">Wind Speed</p>
+              <span class="value">12.12 km/h</span>
+            </div>
+            <div class="daycontent">
+              <p class="title">Sunrise</p>
+              <span class="value">5:56 AM</span>
+            </div>
+            <div class="daycontent">
+              <p class="title">Sunset</p>
+              <span class="value">6:39 PM</span>
+            </div>
+          </div>
+
+          <div class="nextlist">
+            <ul>
+              <li>
+                <img src="./stock/icons/drizzle.png" />
+                <span>Saturday</span>
+                <span class="est_temp">34°C</span>
+              </li>
+              <li>
+                <img src="./stock/icons/drizzle.png" />
+                <span>Saturday</span>
+                <span class="est_temp">34°C</span>
+              </li>
+              <li>
+                <img src="./stock/icons/drizzle.png" />
+                <span>Saturday</span>
+                <span class="est_temp">34°C</span>
+              </li>
+              <li>
+                <img src="./stock/icons/drizzle.png" />
+                <span>Saturday</span>
+                <span class="est_temp">34°C</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript linkage -->
+    <script src="./dyno.js"></script>
+  </body>
+</html>

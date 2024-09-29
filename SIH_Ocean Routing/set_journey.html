@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Journey</title>
     <link rel="shortcut icon" href="./images/logo.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
-    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="set_journey.css">
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body style="background-image: url('C:\Users\suhan\OneDrive\Documents\GitHub\sih2024\SIH_Ocean Routing\src\Nadish_logo.png'); background-size: cover;">
     <header>
-        <div class="inline-flex items-center space-x-2">
+    
             <span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -45,14 +45,6 @@
             <span class="font-bold">Nadish</span>
         </div>
 
-
-
-
-
-       <!--- <div class="logo" title="University Management System">
-            <img src="./images/logo.png" alt="">
-            <h2>U<span class="danger">M</span>S</h2>
-        </div>-->
         <div class="navbar">
             <a href="index.html" class="active">
                 <span class="material-icons-sharp">home</span>
@@ -82,8 +74,8 @@
             <span class="material-icons-sharp active">light_mode</span>
             <span class="material-icons-sharp">dark_mode</span>
         </div>
-        
     </header>
+
     <div class="container">
         <aside>
             <div class="profile">
@@ -99,11 +91,11 @@
                 <div class="about">
                     <h5>Journey</h5>
                     <p>Narobi - Mumbai</p>
-                    <h5>Date of start </h5>
+                    <h5>Date of start</h5>
                     <p>29-Feb-2024</p>
-                    <h5>Date of end </h5>
+                    <h5>Date of end</h5>
                     <p>30-Feb-2024</p>
-                    <h5>Current Location </h5>
+                    <h5>Current Location</h5>
                     <p>cape of good</p>
                     <h5>Cordinates</h5>
                     <p>12-2112-122</p>
@@ -112,57 +104,45 @@
         </aside>
 
         <main>
-            <h1>Current Journey</h1>
-            <div class="subjects">
-                <div class="eg">
-                  <span class="material-icons-sharp"></span>
-                    <h3>View your Route</h3>
-                    
-                    <div class="progress">
-                        <img src="SIH_Ocean Routing\src\routes.png">
-                    </div>
-                </div>
-                <div class="mth">
-                    <span class="material-icons-sharp"></span>
-                    <h3>Check Weather of the route</h3>
-                    
-                    <div class="progress">
-                        <img src="C:\Users\suhan\SIH_Ocean Routing\src\weather.png">
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="subjects">
-                <div class="cs">
-                    <span class="material-icons-sharp"></span>
-                    <h3>notifications</h3>
-                    
-                    <div class="progress">
-                        <img src="C:\Users\suhan\SIH_Ocean Routing\src\notification.png">
-                    </div>
-                    
-                </div>
-                <div class="cg">
-                    <span class="material-icons-sharp"></span>
-                    <h3>Profile</h3>
+            <h1>Plan Your Journey</h1>
 
+            <div class="subjects">
+                <div class="start-point">
+                    <span class="material-icons-sharp">place</span>
+                    <h3>Starting Point</h3>
                     <div class="progress">
-                        <img src="C:\Users\suhan\SIH_Ocean Routing\src\profile.png">
+                        <input type="text" id="startingPoint" placeholder="Enter Starting Point">
                     </div>
-                    
+                </div>
+
+                <div class="destination">
+                    <span class="material-icons-sharp">flag</span>
+                    <h3>Set Destination</h3>
+                    <div class="progress">
+                        <input type="text" id="destination" placeholder="Enter Destination">
+                    </div>
                 </div>
             </div>
 
+            <div class="submit-section" style="text-align: center; margin-top: 20px;">
+                <button type="submit" onclick="submitJourney()">Submit</button>
         </main>
-
- 
-            
-    
-
-
     </div>
 
+    <script>
+        function submitJourney() {
+            const startingPoint = document.getElementById('startingPoint').value;
+            const destination = document.getElementById('destination').value;
+
+            if (startingPoint && destination) {
+                alert(`Journey Submitted!\nStarting Point: ${startingPoint}\nDestination: ${destination}`);
+            } else {
+                alert("Please fill in both Starting Point and Destination.");
+            }
+        }
+    </script>
+
     <script src="timeTable.js"></script>
-    <script src="dashboard.js"></script>
+    <script src="set_journey.js"></script>
 </body>
 </html>

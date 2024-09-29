@@ -20,7 +20,7 @@ const createNotification = (message = null, type = null) => {
   notif.classList.add(type ? type : getRandomType());
   notif.innerText = message ? message : getRandomMessage();
   toasts.appendChild(notif);
-  setTimeout(() => notif.remove(), 3000);
+  //setTimeout(() => notif.remove(), 3000);
 };
 
 button.addEventListener("click", () => createNotification());
