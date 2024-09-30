@@ -160,7 +160,7 @@
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
 <script>
     // Initialize the map and set its view to Indian Ocean coordinates
-    const map = L.map('map').setView([-20.0, 80.0], 3);
+    const map = L.map('map').setView([6.9271, 79.8612], 3);
 
     // Add OpenStreetMap tile layer
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -169,10 +169,10 @@
     }).addTo(map);
 
     // Add markers and polyline
-    const marker1 = L.marker([-20.0, 80.0]).addTo(map);
+    const marker1 = L.marker([6.9271, 79.8612]).addTo(map);
     marker1.bindPopup('Starting Point').openPopup();
 
-    const marker2 = L.marker([-15.0, 85.0]).addTo(map);
+    const marker2 = L.marker([-18.1492, 49.4023]).addTo(map);
     marker2.bindPopup('Destination').openPopup();
 
     const latlngs = [
